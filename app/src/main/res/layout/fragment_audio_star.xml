@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    android:layout_height="match_parent"
+    tools:context=".ui.audio.AudioStarFragment">
+
+    <TextView
+        app:layout_constraintTop_toTopOf="@id/seek_bar"
+        android:id="@+id/progress_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/seek_bar"
+        android:layout_alignTop="@id/seek_bar"
+        android:text="00:00"
+        android:layout_marginTop="14dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="11dp"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        app:layout_constraintTop_toTopOf="@id/seek_bar"
+        android:id="@+id/duration_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="11dp"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+    <ImageView
+        android:id="@+id/iv_arrow_back"
+        android:layout_width="22dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="28dp"
+        android:src="@drawable/iv_arrow_vector"
+        app:layout_constraintBottom_toBottomOf="@id/view_border"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_star"
+        android:layout_width="38dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/ellipse_14"
+        app:layout_constraintBottom_toBottomOf="@id/view_border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <ImageView
+        android:id="@+id/iv_book"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_marginBottom="26dp"
+        android:layout_marginEnd="26dp"
+        android:src="@drawable/iv_vec_bk"
+        app:layout_constraintBottom_toBottomOf="@id/view_border"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <View
+        android:id="@+id/view_border"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="90dp"
+        android:background="@color/gray"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_large"
+        android:layout_width="250dp"
+        android:layout_height="356dp"
+        android:layout_marginTop="135dp"
+        android:src="@drawable/image_book_van_gog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/tv_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_large"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:text="Звездная ночь"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/nameBook"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        android:textColor="@color/white_2"
+        android:textSize="16sp"
+        android:text="Майкл берд"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <SeekBar
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:progress="0"
+        app:layout_constraintTop_toTopOf="@id/nameBook"
+
+        android:layout_marginBottom="32dp" />
+
+    <ImageView
+        android:id="@+id/play_button"
+        android:layout_width="32dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/polygon_3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/seek_bar" />
+    <ImageView
+        android:id="@+id/iv_playyq"
+        android:layout_width="32dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="28dp"
+        android:src="@drawable/polygon_play"
+        app:layout_constraintStart_toEndOf="@id/play_button"
+        app:layout_constraintTop_toBottomOf="@id/seek_bar" />
+    <ImageView
+        android:id="@+id/pause_button"
+        android:layout_width="32dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/polygon_play"
+        android:layout_marginStart="42dp"
+        app:layout_constraintStart_toEndOf="@id/play_button"
+        app:layout_constraintTop_toBottomOf="@id/seek_bar" />
+
+    <ImageView
+        android:id="@+id/iv_playyw"
+        android:layout_width="32dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="28dp"
+        android:src="@drawable/polygon_play_left"
+        app:layout_constraintEnd_toStartOf="@id/play_button"
+        app:layout_constraintTop_toBottomOf="@id/seek_bar" />
+    <ImageView
+        android:id="@+id/stop_button"
+        android:layout_width="32dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="42dp"
+        android:src="@drawable/polygon_play_left"
+        app:layout_constraintEnd_toStartOf="@id/play_button"
+        app:layout_constraintTop_toBottomOf="@id/seek_bar" />
+    <ImageView
+        android:id="@+id/iv_share"
+        android:layout_width="32dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="40dp"
+        android:src="@drawable/vector_share"
+        app:layout_constraintEnd_toStartOf="@id/stop_button"
+        app:layout_constraintTop_toBottomOf="@id/seek_bar" />
+    <ImageView
+        android:id="@+id/iv_sh"
+        android:layout_width="32dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="40dp"
+        android:src="@drawable/vector_png"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/seek_bar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

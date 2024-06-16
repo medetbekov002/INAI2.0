@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".ui.profile.ProfileFragment">
+
+    <ImageView
+        android:id="@+id/iv_arrow_back"
+        android:layout_width="44dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="56dp"
+        android:src="@drawable/arrow_back_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_verif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="54dp"
+        android:text="Мой профиль"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="@color/black_2"
+        app:cardCornerRadius="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_verif">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/vac_ava"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/vec_ava"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/kap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:text="Anjella Aleksandra"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintStart_toEndOf="@+id/vac_ava"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:text="youremail@mail.com"
+                android:textColor="@color/white_2"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/vac_ava"
+                app:layout_constraintTop_toTopOf="@id/kap" />
+
+            <View
+                android:id="@+id/view_border"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/gray"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/vac_ava" />
+
+            <ImageView
+                android:id="@+id/vac_ava_naush"
+                android:layout_width="26dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/vec_naush"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view_border" />
+
+            <TextView
+                android:id="@+id/books"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="20dp"
+                android:text="Aудиокниги"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/vac_ava_naush"
+                app:layout_constraintTop_toBottomOf="@id/view_border" />
+
+            <ImageView
+                android:id="@+id/vec_55"
+                android:layout_width="7dp"
+                android:layout_height="14dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/vec_55"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view_border" />
+
+            <ImageView
+                android:id="@+id/vec_55_1"
+                android:layout_width="7dp"
+                android:layout_height="14dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/vec_55"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view_border_2" />
+
+            <View
+                android:id="@+id/view_border_2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="14dp"
+                android:background="@color/gray"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/vac_ava_naush" />
+
+            <ImageView
+                android:id="@+id/download"
+                android:layout_width="26dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/download"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view_border_2" />
+
+            <TextView
+                android:id="@+id/down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp"
+                android:text="Скачанные"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/download"
+                app:layout_constraintTop_toBottomOf="@id/view_border_2" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginHorizontal="80dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/black_2"
+        app:cardCornerRadius="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_3" >
+        <TextView
+            android:id="@+id/btn_001"
+            android:text="Удалить аккаунт"
+            android:textSize="14sp"
+            android:textColor="@color/red"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="56dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </androidx.cardview.widget.CardView>
+    <ImageView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/epileps"
+        android:layout_width="match_parent"
+        android:layout_height="92dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

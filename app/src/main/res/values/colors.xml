@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="black_2">#991A1919</color>
+    <color name="black_3">#221A1919</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_2">#A09D9D</color>
+    <color name="blue">#6022DB</color>
+    <color name="valet">#331A66</color>
+    <color name="valet_0">#6022DB</color>
+    <color name="gray">#63989595</color>
+    <color name="red">#FF3D00</color>
+    <color name="bluewFoil">#6022DB</color>
+    <color name="fiol">#b778d1 </color>
+</resources>

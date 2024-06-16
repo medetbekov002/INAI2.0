@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    tools:context=".ui.menu.MenuFragment">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/group_151"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp" >
+            <ImageView
+                android:src="@drawable/home"
+                android:layout_marginStart="24dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+            <TextView
+                android:id="@+id/tv_main_sc"
+                android:textSize="18sp"
+                android:text="Главный экран"
+                android:textColor="@color/white"
+                android:layout_marginStart="10dp"
+                android:layout_margin="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp" >
+            <ImageView
+                android:src="@drawable/ic_user_svg"
+                android:layout_marginStart="24dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+            <TextView
+                android:id="@+id/tv_my_profile"
+                android:textSize="18sp"
+                android:text="Мой профиль"
+                android:textColor="@color/white"
+                android:layout_marginStart="10dp"
+                android:layout_margin="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp" >
+            <ImageView
+                android:src="@drawable/im_mic"
+                android:layout_marginStart="24dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+            <TextView
+                android:id="@+id/tv_podcast"
+                android:textSize="18sp"
+                android:text="Подкасты"
+                android:textColor="@color/white"
+                android:layout_marginStart="10dp"
+                android:layout_margin="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp" >
+            <ImageView
+                android:src="@drawable/vector_png"
+                android:layout_marginStart="24dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+            <TextView
+                android:id="@+id/tv_favourites"
+                android:textSize="18sp"
+                android:text="Избранное"
+                android:textColor="@color/white"
+                android:layout_marginStart="10dp"
+                android:layout_margin="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp" >
+            <ImageView
+                android:src="@drawable/vec_message_square"
+                android:layout_marginStart="24dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+            <TextView
+                android:id="@+id/tv_connect_with"
+                android:textSize="18sp"
+                android:text="Связаться с редакцией"
+                android:textColor="@color/white"
+                android:layout_marginStart="10dp"
+                android:layout_margin="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp" >
+            <ImageView
+                android:src="@drawable/ivec_nfo"
+                android:layout_marginStart="24dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+            <TextView
+                android:id="@+id/tv_information"
+                android:textSize="18sp"
+                android:text="О приложении"
+                android:textColor="@color/white"
+                android:layout_marginStart="10dp"
+                android:layout_margin="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:src="@drawable/epileps"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

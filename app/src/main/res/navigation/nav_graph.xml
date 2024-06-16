@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/verificationFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.myapplication.ui.main.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" />
+    <fragment
+        android:id="@+id/verificationFragment"
+        android:name="com.example.myapplication.ui.verification.VerificationFragment"
+        android:label="fragment_verification"
+        tools:layout="@layout/fragment_verification" />
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.example.myapplication.ui.verification.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome" />
+    <fragment
+        android:id="@+id/chooseAccountFragment"
+        android:name="com.example.myapplication.ui.verification.ChooseAccountFragment"
+        android:label="fragment_choose_account"
+        tools:layout="@layout/fragment_choose_account" />
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.myapplication.ui.menu.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.myapplication.ui.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/libFragment"
+        android:name="com.example.myapplication.ui.library.LibFragment"
+        android:label="fragment_lib"
+        tools:layout="@layout/fragment_lib" />
+    <fragment
+        android:id="@+id/favFragment"
+        android:name="com.example.myapplication.ui.fav.FavFragment"
+        android:label="fragment_fav"
+        tools:layout="@layout/fragment_fav" />
+    <fragment
+        android:id="@+id/audioFragment"
+        android:name="com.example.myapplication.ui.audio.AudioFragment"
+        android:label="fragment_audio"
+        tools:layout="@layout/fragment_audio" />
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.example.myapplication.ui.detail_for_star.DetailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details" />
+    <fragment
+        android:id="@+id/testForStarFragment"
+        android:name="com.example.myapplication.ui.detail_for_star.TestForStarFragment"
+        android:label="fragment_test_for_star"
+        tools:layout="@layout/fragment_test_for_star" />
+    <fragment
+        android:id="@+id/list1Fragment"
+        android:name="com.example.myapplication.ui.onboarding.listfragment.List1Fragment"
+        android:label="fragment_list1"
+        tools:layout="@layout/fragment_list1" />
+    <fragment
+        android:id="@+id/list2Fragment"
+        android:name="com.example.myapplication.ui.onboarding.listfragment.List2Fragment"
+        android:label="fragment_list2"
+        tools:layout="@layout/fragment_list2" />
+    <fragment
+        android:id="@+id/list3Fragment"
+        android:name="com.example.myapplication.ui.onboarding.listfragment.List3Fragment"
+        android:label="fragment_list3"
+        tools:layout="@layout/fragment_list3" />
+    <fragment
+        android:id="@+id/list4Fragment"
+        android:name="com.example.myapplication.ui.onboarding.listfragment.List4Fragment"
+        android:label="fragment_list4"
+        tools:layout="@layout/fragment_list4" />
+    <fragment
+        android:id="@+id/onBoardFragment"
+        android:name="com.example.myapplication.ui.onboarding.OnBoardFragment"
+        android:label="fragment_on_board"
+        tools:layout="@layout/fragment_on_board" />
+    <fragment
+        android:id="@+id/testForDuneFragment"
+        android:name="com.example.myapplication.ui.detail.TestForDuneFragment"
+        android:label="fragment_test_for_dune"
+        tools:layout="@layout/fragment_test_for_dune" />
+    <fragment
+        android:id="@+id/testForEdgeFragment"
+        android:name="com.example.myapplication.ui.detail.TestForEdgeFragment"
+        android:label="fragment_test_for_edge"
+        tools:layout="@layout/fragment_test_for_edge" />
+    <fragment
+        android:id="@+id/detailForEdgeFragment"
+        android:name="com.example.myapplication.ui.detail.DetailForEdgeFragment"
+        android:label="fragment_detail_for_edge"
+        tools:layout="@layout/fragment_detail_for_edge" />
+    <fragment
+        android:id="@+id/detailDuneFragment"
+        android:name="com.example.myapplication.ui.detail.DetailDuneFragment"
+        android:label="fragment_detail_dune"
+        tools:layout="@layout/fragment_detail_dune" />
+    <fragment
+        android:id="@+id/audioStarFragment"
+        android:name="com.example.myapplication.ui.audio.AudioStarFragment"
+        android:label="fragment_audio_star"
+        tools:layout="@layout/fragment_audio_star" />
+    <fragment
+        android:id="@+id/contactsFragment"
+        android:name="com.example.myapplication.ui.contacts.ContactsFragment"
+        android:label="fragment_contacts"
+        tools:layout="@layout/fragment_contacts" />
+    <fragment
+        android:id="@+id/aboutAppFragment"
+        android:name="com.example.myapplication.ui.contacts.AboutAppFragment"
+        android:label="fragment_about_app"
+        tools:layout="@layout/fragment_about_app" />
+    <fragment
+        android:id="@+id/audioTheEdgeFragment"
+        android:name="com.example.myapplication.ui.audio.AudioTheEdgeFragment"
+        android:label="fragment_audio_the_edge"
+        tools:layout="@layout/fragment_audio_the_edge" />
+    <fragment
+        android:id="@+id/audioDumeFragment"
+        android:name="com.example.myapplication.ui.audio.AudioDumeFragment"
+        android:label="fragment_audio_dume"
+        tools:layout="@layout/fragment_audio_dume" />
+</navigation>
