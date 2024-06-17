@@ -32,12 +32,12 @@ public class MainFragment extends Fragment {
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        binding.ivVanGogBook.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                NavHostFragment.findNavController(MainFragment.this).navigate(R.id.audioStarFragment);
-            }
-        });
+//        binding.ivVanGogBook.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                NavHostFragment.findNavController(MainFragment.this).navigate(R.id.audioStarFragment);
+//            }
+//        });
 
         binding.ivMenu.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -52,15 +52,15 @@
         app:layout_constraintBottom_toBottomOf="@id/view_border"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-    <ImageView
-        android:id="@+id/iv_book"
-        android:layout_width="22dp"
-        android:layout_height="22dp"
-        android:layout_marginBottom="26dp"
-        android:layout_marginEnd="26dp"
-        android:src="@drawable/iv_vec_bk"
-        app:layout_constraintBottom_toBottomOf="@id/view_border"
-        app:layout_constraintEnd_toEndOf="parent" />
+<!--    <ImageView-->
+<!--        android:id="@+id/iv_book"-->
+<!--        android:layout_width="22dp"-->
+<!--        android:layout_height="22dp"-->
+<!--        android:layout_marginBottom="26dp"-->
+<!--        android:layout_marginEnd="26dp"-->
+<!--        android:src="@drawable/iv_vec_bk"-->
+<!--        app:layout_constraintBottom_toBottomOf="@id/view_border"-->
+<!--        app:layout_constraintEnd_toEndOf="parent" />-->
     <View
         android:id="@+id/view_border"
         android:layout_width="match_parent"

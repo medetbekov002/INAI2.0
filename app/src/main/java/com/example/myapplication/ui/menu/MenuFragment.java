@@ -61,12 +61,12 @@ public class MenuFragment extends Fragment {
             }
         });
 
-        binding.tvConnectWith.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                navigateToContactsFragment();
-            }
-        });
+//        binding.tvConnectWith.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                navigateToContactsFragment();
+//            }
+//        });
     }
 
     private void navigateUp() {
@@ -96,6 +96,6 @@ public class MenuFragment extends Fragment {
 
     private void navigateToContactsFragment() {
         NavController navController = NavHostFragment.findNavController(this);
-        navController.navigate(R.id.contactsFragment);
+//        navController.navigate(R.id.contactsFragment);
     }
 }

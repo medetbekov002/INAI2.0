@@ -53,26 +53,26 @@
         android:background="@color/gray"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/litv_iv" />
-    <TextView
-        android:id="@+id/tv_coll"
-        android:textSize="18sp"
-        android:text="Коллекция"
-        android:textColor="@color/white"
-        app:layout_constraintStart_toEndOf="@+id/litv_iv"
-        app:layout_constraintTop_toBottomOf="@+id/view_border"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="8dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-    <ImageView
-        android:id="@+id/vec_55_4"
-        android:layout_width="7dp"
-        android:layout_height="14dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="122dp"
-        android:layout_marginEnd="12dp"
-        android:src="@drawable/vec_55"/>
+<!--    <TextView-->
+<!--        android:id="@+id/tv_coll"-->
+<!--        android:textSize="18sp"-->
+<!--        android:text="Коллекция"-->
+<!--        android:textColor="@color/white"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/litv_iv"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/view_border"-->
+<!--        android:layout_marginStart="12dp"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"/>-->
+<!--    <ImageView-->
+<!--        android:id="@+id/vec_55_4"-->
+<!--        android:layout_width="7dp"-->
+<!--        android:layout_height="14dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        android:layout_marginTop="122dp"-->
+<!--        android:layout_marginEnd="12dp"-->
+<!--        android:src="@drawable/vec_55"/>-->
     <LinearLayout
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/lin_1"

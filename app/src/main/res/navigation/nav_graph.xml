@@ -50,16 +50,16 @@
         android:name="com.example.myapplication.ui.audio.AudioFragment"
         android:label="fragment_audio"
         tools:layout="@layout/fragment_audio" />
-    <fragment
-        android:id="@+id/detailsFragment"
-        android:name="com.example.myapplication.ui.detail_for_star.DetailsFragment"
-        android:label="fragment_details"
-        tools:layout="@layout/fragment_details" />
-    <fragment
-        android:id="@+id/testForStarFragment"
-        android:name="com.example.myapplication.ui.detail_for_star.TestForStarFragment"
-        android:label="fragment_test_for_star"
-        tools:layout="@layout/fragment_test_for_star" />
+<!--    <fragment-->
+<!--        android:id="@+id/detailsFragment"-->
+<!--        android:name="com.example.myapplication.ui.detail_for_star.DetailsFragment"-->
+<!--        android:label="fragment_details"-->
+<!--        tools:layout="@layout/fragment_details" />-->
+<!--    <fragment-->
+<!--        android:id="@+id/testForStarFragment"-->
+<!--        android:name="com.example.myapplication.ui.detail_for_star.TestForStarFragment"-->
+<!--        android:label="fragment_test_for_star"-->
+<!--        tools:layout="@layout/fragment_test_for_star" />-->
     <fragment
         android:id="@+id/list1Fragment"
         android:name="com.example.myapplication.ui.onboarding.listfragment.List1Fragment"
@@ -110,11 +110,11 @@
         android:name="com.example.myapplication.ui.audio.AudioStarFragment"
         android:label="fragment_audio_star"
         tools:layout="@layout/fragment_audio_star" />
-    <fragment
-        android:id="@+id/contactsFragment"
-        android:name="com.example.myapplication.ui.contacts.ContactsFragment"
-        android:label="fragment_contacts"
-        tools:layout="@layout/fragment_contacts" />
+<!--    <fragment-->
+<!--        android:id="@+id/contactsFragment"-->
+<!--        android:name="com.example.myapplication.ui.contacts.ContactsFragment"-->
+<!--        android:label="fragment_contacts"-->
+<!--        tools:layout="@layout/fragment_contacts" />-->
     <fragment
         android:id="@+id/aboutAppFragment"
         android:name="com.example.myapplication.ui.contacts.AboutAppFragment"

@@ -31,7 +31,7 @@ public class DetailsFragment extends Fragment {
         binding.btnNtxt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                NavHostFragment.findNavController(DetailsFragment.this).navigate(R.id.testForStarFragment);
+//                NavHostFragment.findNavController(DetailsFragment.this).navigate(R.id.testForStarFragment);
             }
         });
         binding.tvCon.setOnClickListener(new View.OnClickListener() {

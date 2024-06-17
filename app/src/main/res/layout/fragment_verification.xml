@@ -7,15 +7,15 @@
     android:background="@color/black"
     tools:context=".ui.verification.VerificationFragment">
 
-    <ImageView
-        android:id="@+id/iv_arrow_back"
-        android:layout_width="44dp"
-        android:layout_height="20dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="56dp"
-        android:src="@drawable/arrow_back_24"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+<!--    <ImageView-->
+<!--        android:id="@+id/iv_arrow_back"-->
+<!--        android:layout_width="44dp"-->
+<!--        android:layout_height="20dp"-->
+<!--        android:layout_marginStart="30dp"-->
+<!--        android:layout_marginTop="56dp"-->
+<!--        android:src="@drawable/arrow_back_24"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
 
     <TextView
         android:id="@+id/tv_verif"
