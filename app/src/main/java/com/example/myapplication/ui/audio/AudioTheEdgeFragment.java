@@ -7,10 +7,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.SeekBar;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.fragment.NavHostFragment;
 
 import com.example.myapplication.R;
 import com.example.myapplication.databinding.FragmentAudioTheEdgeBinding;
@@ -33,7 +33,7 @@ public class AudioTheEdgeFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        mediaPlayer = MediaPlayer.create(getContext(), R.raw.djef);
+        mediaPlayer = MediaPlayer.create(getContext(), R.raw.priklucheniyamaksa);
         binding.seekBar.setMax(mediaPlayer.getDuration());
         binding.durationText.setText(getTimeString(mediaPlayer.getDuration()));
 
@@ -74,6 +74,14 @@ public class AudioTheEdgeFragment extends Fragment {
                 binding.seekBar.setProgress(0);
                 mediaPlayer.start();
                 binding.playButton.setImageResource(R.drawable.play);
+            }
+        });
+
+        binding.ivArrowBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                NavHostFragment.findNavController(AudioTheEdgeFragment.this)
+                        .navigate(R.id.detailForEdgeFragment);
             }
         });
 

@@ -56,7 +56,7 @@
                 android:layout_height="158dp"
                 android:layout_marginStart="34dp"
                 android:layout_marginTop="22dp"
-                android:src="@drawable/im_book1"
+                android:src="@drawable/kids"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -72,7 +72,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="12dp"
                     android:layout_marginTop="22dp"
-                    android:text="Hypocrite World"
+                    android:text="Приключения Макса"
                     android:textColor="@color/white"
                     android:textSize="20sp" />
                 <TextView

@@ -89,7 +89,7 @@
             android:layout_height="158dp"/>
         <ImageView
             android:id="@+id/bk_6"
-            android:src="@drawable/im_bk_4"
+            android:src="@drawable/kids"
             android:layout_marginStart="22dp"
             android:layout_width="110dp"
             android:layout_height="158dp"/>
@@ -122,7 +122,7 @@
             android:layout_height="158dp"/>
         <ImageView
             android:id="@+id/bk_33"
-            android:src="@drawable/im_bk_02"
+            android:src="@drawable/kids"
             android:layout_marginStart="22dp"
             android:layout_width="110dp"
             android:layout_height="158dp"/>
@@ -149,7 +149,7 @@
             android:layout_height="158dp"/>
         <ImageView
             android:id="@+id/bk_3"
-            android:src="@drawable/im_bk_2"
+            android:src="@drawable/kids"
             android:layout_marginStart="22dp"
             android:layout_width="110dp"
             android:layout_height="158dp"/>

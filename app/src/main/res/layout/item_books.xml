@@ -11,7 +11,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginHorizontal="6dp"
-        android:src="@drawable/image_book_van_gog"
+        android:src="@drawable/kids"
         android:layout_height="170dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

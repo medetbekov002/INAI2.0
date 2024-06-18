@@ -6,7 +6,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import androidx.navigation.fragment.NavHostFragment;
-
 import com.example.myapplication.R;
 import com.example.myapplication.databinding.FragmentMenuBinding;
 
@@ -42,12 +41,12 @@ public class MenuFragment extends Fragment {
                 NavHostFragment.findNavController(MenuFragment.this).navigate(R.id.libFragment);
             }
         });
-        binding.tvFavourites.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                NavHostFragment.findNavController(MenuFragment.this).navigate(R.id.favFragment);
-            }
-        });
+//        binding.tvFavourites.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                NavHostFragment.findNavController(MenuFragment.this).navigate(R.id.favFragment);
+//            }
+//        });
         binding.tvInformation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

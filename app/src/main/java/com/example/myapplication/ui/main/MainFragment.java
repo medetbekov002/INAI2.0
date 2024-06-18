@@ -6,12 +6,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import androidx.navigation.fragment.NavHostFragment;
-
 import com.example.myapplication.R;
 import com.example.myapplication.databinding.FragmentMainBinding;
 import com.example.myapplication.ui.main.adapter.BooksAdapter;
 import com.example.myapplication.ui.main.adapter.BooksAdapter2;
-
 import java.util.ArrayList;
 
 public class MainFragment extends Fragment {
@@ -48,6 +46,13 @@ public class MainFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 NavHostFragment.findNavController(MainFragment.this).navigate(R.id.menuFragment);
+            }
+        });
+
+        binding.imageView2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                NavHostFragment.findNavController(MainFragment.this).navigate(R.id.searchFragment);
             }
         });
 

@@ -7,7 +7,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.SeekBar;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
@@ -15,9 +14,6 @@ import androidx.navigation.fragment.NavHostFragment;
 
 import com.example.myapplication.R;
 import com.example.myapplication.databinding.FragmentAudioStarBinding;
-
-//import com.example.mybooksapplication.R;
-//import com.example.mybooksapplication.databinding.FragmentAudioStarBinding;
 
 public class AudioStarFragment extends Fragment {
 
@@ -37,7 +33,7 @@ public class AudioStarFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        mediaPlayer = MediaPlayer.create(getContext(), R.raw.sovenok);
+        mediaPlayer = MediaPlayer.create(getContext(), R.raw.priklucheniyamaksaanddog);
         binding.seekBar.setMax(mediaPlayer.getDuration());
         binding.durationText.setText(getTimeString(mediaPlayer.getDuration()));
 

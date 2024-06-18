@@ -26,7 +26,7 @@ public class DetailsFragment extends Fragment {
         binding.ivArr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                NavHostFragment.findNavController(DetailsFragment.this).navigateUp();
+                NavHostFragment.findNavController(DetailsFragment.this).navigate(R.id.libFragment);
             }
         });
 

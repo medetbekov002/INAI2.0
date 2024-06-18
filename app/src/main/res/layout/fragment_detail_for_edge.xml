@@ -51,7 +51,7 @@
                 android:layout_width="224dp"
                 android:layout_height="322dp"
                 android:layout_marginTop="44dp"
-                android:src="@drawable/im_bk_4"
+                android:src="@drawable/kids"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -61,7 +61,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="Край вселенной"
+                android:text="Приключения Макса"
                 android:textColor="@color/white"
                 android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"

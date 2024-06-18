@@ -6,7 +6,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import androidx.navigation.fragment.NavHostFragment;
-
 import com.example.myapplication.R;
 import com.example.myapplication.databinding.FragmentProfileBinding;
 

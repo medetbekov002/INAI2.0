@@ -75,7 +75,7 @@
         android:layout_width="250dp"
         android:layout_height="356dp"
         android:layout_marginTop="135dp"
-        android:src="@drawable/image_book_van_gog"
+        android:src="@drawable/kids"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -86,7 +86,7 @@
         app:layout_constraintTop_toBottomOf="@+id/iv_large"
         android:textColor="@color/white"
         android:textSize="20sp"
-        android:text="Звездная ночь"
+        android:text="Приключения Макса и собаки"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
     <TextView

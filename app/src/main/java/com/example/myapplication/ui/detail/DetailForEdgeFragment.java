@@ -4,12 +4,10 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
-
 import com.example.myapplication.R;
 import com.example.myapplication.databinding.FragmentDetailForEdgeBinding;
 
@@ -33,7 +31,7 @@ public class DetailForEdgeFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 NavHostFragment.findNavController(DetailForEdgeFragment.this)
-                        .navigateUp();
+                        .navigate(R.id.libFragment);
             }
         });
 

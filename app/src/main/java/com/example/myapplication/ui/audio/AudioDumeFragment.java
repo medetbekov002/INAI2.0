@@ -4,11 +4,12 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.fragment.NavHostFragment;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.SeekBar;
-
 import com.example.myapplication.R;
 import com.example.myapplication.databinding.FragmentAudioDumeBinding;
 
@@ -28,7 +29,7 @@ public class AudioDumeFragment extends Fragment {
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        mediaPlayer = MediaPlayer.create(getContext(), R.raw.you_can);
+        mediaPlayer = MediaPlayer.create(getContext(), R.raw.sobachkaleya);
         binding.seekBar.setMax(mediaPlayer.getDuration());
         binding.durationText.setText(getTimeString(mediaPlayer.getDuration()));
 
@@ -69,6 +70,14 @@ public class AudioDumeFragment extends Fragment {
                 binding.seekBar.setProgress(0);
                 mediaPlayer.start();
                 binding.playButton.setImageResource(R.drawable.play);
+            }
+        });
+
+        binding.ivArrowBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                NavHostFragment.findNavController(AudioDumeFragment.this)
+                        .navigate(R.id.detailDuneFragment);
             }
         });
 

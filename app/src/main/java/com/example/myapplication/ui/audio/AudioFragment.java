@@ -7,13 +7,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.SeekBar;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.fragment.NavHostFragment;
 
 import com.example.myapplication.R;
 import com.example.myapplication.databinding.FragmentAudioBinding;
+import com.example.myapplication.ui.detail.DetailForEdgeFragment;
 
 public class AudioFragment extends Fragment {
 
@@ -33,7 +34,7 @@ public class AudioFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        mediaPlayer = MediaPlayer.create(getContext(), R.raw.you_can);
+        mediaPlayer = MediaPlayer.create(getContext(), R.raw.sobachkaleya);
         binding.seekBar.setMax(mediaPlayer.getDuration());
         binding.durationText.setText(getTimeString(mediaPlayer.getDuration()));
 
@@ -74,6 +75,14 @@ public class AudioFragment extends Fragment {
                 binding.seekBar.setProgress(0);
                 mediaPlayer.start();
                 binding.playButton.setImageResource(R.drawable.play);
+            }
+        });
+
+        binding.ivArrowBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                NavHostFragment.findNavController(AudioFragment.this)
+                        .navigate(R.id.detailsFragment);
             }
         });
 
