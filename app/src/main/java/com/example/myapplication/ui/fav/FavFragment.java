@@ -6,6 +6,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import androidx.navigation.fragment.NavHostFragment;
+
+import com.example.myapplication.R;
 import com.example.myapplication.databinding.FragmentFavBinding;
 
 public class FavFragment extends Fragment {
@@ -24,7 +26,7 @@ public class FavFragment extends Fragment {
         binding.ivArrowBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                NavHostFragment.findNavController(FavFragment.this).navigateUp();
+                NavHostFragment.findNavController(FavFragment.this).navigate(R.id.menuFragment);
             }
         });
     }

@@ -1,5 +1,6 @@
 package com.example.myapplication.ui.library;
 
+
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
@@ -27,14 +28,14 @@ public class LibFragment extends Fragment {
         binding.ivArrowBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                NavHostFragment.findNavController(LibFragment.this).navigateUp();
+                NavHostFragment.findNavController(LibFragment.this).navigate(R.id.menuFragment);
             }
         });
 
         binding.bk3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                NavHostFragment.findNavController(LibFragment.this).navigate(R.id.detailsFragment);
+                NavHostFragment.findNavController(LibFragment.this).navigate(R.id.detailsFragment);
             }
         });
 
@@ -53,3 +54,4 @@ public class LibFragment extends Fragment {
         });
     }
 }
+

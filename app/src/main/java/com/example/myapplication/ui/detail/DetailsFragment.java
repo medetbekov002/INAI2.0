@@ -22,18 +22,22 @@ public class DetailsFragment extends Fragment {
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
         binding.ivArr.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 NavHostFragment.findNavController(DetailsFragment.this).navigateUp();
             }
         });
+
         binding.btnNtxt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                NavHostFragment.findNavController(DetailsFragment.this).navigate(R.id.testForStarFragment);
+                // Uncomment and set the correct navigation action
+                // NavHostFragment.findNavController(DetailsFragment.this).navigate(R.id.testForStarFragment);
             }
         });
+
         binding.tvCon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

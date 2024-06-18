@@ -3,29 +3,40 @@ package com.example.myapplication.ui.audio;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
-import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.SeekBar;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.navigation.fragment.NavHostFragment;
+
 import com.example.myapplication.R;
 import com.example.myapplication.databinding.FragmentAudioStarBinding;
 
+//import com.example.mybooksapplication.R;
+//import com.example.mybooksapplication.databinding.FragmentAudioStarBinding;
+
 public class AudioStarFragment extends Fragment {
+
     private FragmentAudioStarBinding binding;
     private MediaPlayer mediaPlayer;
     private Handler handler;
     private boolean isPlaying = false;
 
+    @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         binding = FragmentAudioStarBinding.inflate(inflater, container, false);
         return binding.getRoot();
     }
 
     @Override
-    public void onViewCreated(View view, Bundle savedInstanceState) {
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
         mediaPlayer = MediaPlayer.create(getContext(), R.raw.sovenok);
         binding.seekBar.setMax(mediaPlayer.getDuration());
         binding.durationText.setText(getTimeString(mediaPlayer.getDuration()));
@@ -67,6 +78,14 @@ public class AudioStarFragment extends Fragment {
                 binding.seekBar.setProgress(0);
                 mediaPlayer.start();
                 binding.playButton.setImageResource(R.drawable.play);
+            }
+        });
+
+        binding.ivArrowBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                NavHostFragment.findNavController(AudioStarFragment.this)
+                        .navigate(R.id.action_audioStarFragment_to_mainFragment);
             }
         });
 

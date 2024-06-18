@@ -6,7 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import androidx.navigation.fragment.NavHostFragment;
-import androidx.navigation.NavController;
+
 import com.example.myapplication.R;
 import com.example.myapplication.databinding.FragmentMenuBinding;
 
@@ -15,9 +15,7 @@ public class MenuFragment extends Fragment {
     private FragmentMenuBinding binding;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         binding = FragmentMenuBinding.inflate(inflater, container, false);
         return binding.getRoot();
     }
@@ -29,73 +27,39 @@ public class MenuFragment extends Fragment {
         binding.tvMainSc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                navigateUp();
+                NavHostFragment.findNavController(MenuFragment.this).navigate(R.id.mainFragment);
             }
         });
-        
         binding.tvMyProfile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                navigateToProfileFragment();
+                NavHostFragment.findNavController(MenuFragment.this).navigate(R.id.profileFragment);
             }
         });
-
         binding.tvPodcast.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                navigateToLibFragment();
+                NavHostFragment.findNavController(MenuFragment.this).navigate(R.id.libFragment);
             }
         });
-
         binding.tvFavourites.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                navigateToFavFragment();
+                NavHostFragment.findNavController(MenuFragment.this).navigate(R.id.favFragment);
             }
         });
-
         binding.tvInformation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                navigateToAboutAppFragment();
+                NavHostFragment.findNavController(MenuFragment.this).navigate(R.id.aboutAppFragment);
             }
         });
-
 //        binding.tvConnectWith.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {
-//                navigateToContactsFragment();
+//                NavHostFragment.findNavController(MenuFragment.this).navigate(R.id.contactsFragment);
 //            }
 //        });
     }
-
-    private void navigateUp() {
-        NavController navController = NavHostFragment.findNavController(this);
-        navController.navigateUp();
-    }
-
-    private void navigateToProfileFragment() {
-        NavController navController = NavHostFragment.findNavController(this);
-        navController.navigate(R.id.profileFragment);
-    }
-
-    private void navigateToLibFragment() {
-        NavController navController = NavHostFragment.findNavController(this);
-        navController.navigate(R.id.libFragment);
-    }
-
-    private void navigateToFavFragment() {
-        NavController navController = NavHostFragment.findNavController(this);
-        navController.navigate(R.id.favFragment);
-    }
-
-    private void navigateToAboutAppFragment() {
-        NavController navController = NavHostFragment.findNavController(this);
-        navController.navigate(R.id.aboutAppFragment);
-    }
-
-    private void navigateToContactsFragment() {
-        NavController navController = NavHostFragment.findNavController(this);
-//        navController.navigate(R.id.contactsFragment);
-    }
 }
+

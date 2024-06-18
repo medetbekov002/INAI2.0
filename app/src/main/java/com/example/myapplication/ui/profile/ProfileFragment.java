@@ -1,16 +1,11 @@
 package com.example.myapplication.ui.profile;
 
-import static androidx.navigation.Navigation.findNavController;
-
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import androidx.navigation.fragment.NavHostFragment;
-import androidx.navigation.NavController;
-import androidx.navigation.fragment.NavHostFragment;
-
 
 import com.example.myapplication.R;
 import com.example.myapplication.databinding.FragmentProfileBinding;
@@ -20,9 +15,7 @@ public class ProfileFragment extends Fragment {
     private FragmentProfileBinding binding;
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         binding = FragmentProfileBinding.inflate(inflater, container, false);
         return binding.getRoot();
     }
@@ -30,10 +23,24 @@ public class ProfileFragment extends Fragment {
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        binding.ivArrowBack.setOnClickListener(v -> findNavController(requireView()).navigateUp());
-
-        binding.books.setOnClickListener(v -> findNavController(requireView()).navigate(R.id.libFragment));
-
-        binding.btn001.setOnClickListener(v -> findNavController(requireView()).navigate(R.id.verificationFragment));
+        binding.ivArrowBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                NavHostFragment.findNavController(ProfileFragment.this).navigate(R.id.menuFragment);
+            }
+        });
+        binding.books.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                NavHostFragment.findNavController(ProfileFragment.this).navigate(R.id.libFragment);
+            }
+        });
+        binding.btn001.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                NavHostFragment.findNavController(ProfileFragment.this).navigate(R.id.verificationFragment);
+            }
+        });
     }
 }
+

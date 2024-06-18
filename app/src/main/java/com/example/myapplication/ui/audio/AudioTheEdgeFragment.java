@@ -7,7 +7,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.SeekBar;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+
 import com.example.myapplication.R;
 import com.example.myapplication.databinding.FragmentAudioTheEdgeBinding;
 
@@ -18,15 +22,17 @@ public class AudioTheEdgeFragment extends Fragment {
     private Handler handler;
     private boolean isPlaying = false;
 
+    @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         binding = FragmentAudioTheEdgeBinding.inflate(inflater, container, false);
         return binding.getRoot();
     }
 
     @Override
-    public void onViewCreated(View view, Bundle savedInstanceState) {
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
         mediaPlayer = MediaPlayer.create(getContext(), R.raw.djef);
         binding.seekBar.setMax(mediaPlayer.getDuration());
         binding.durationText.setText(getTimeString(mediaPlayer.getDuration()));
