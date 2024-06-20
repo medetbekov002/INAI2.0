@@ -35,7 +35,7 @@ public class AudioKorolevaFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        mediaPlayer = MediaPlayer.create(getContext(), R.raw.priklucheniyamaksaanddog);
+        mediaPlayer = MediaPlayer.create(getContext(), R.raw.krasnayashapochka);
         binding.seekBar.setMax(mediaPlayer.getDuration());
         binding.durationText.setText(getTimeString(mediaPlayer.getDuration()));
 

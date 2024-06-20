@@ -36,7 +36,7 @@ public class AudioPorosyataFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        mediaPlayer = MediaPlayer.create(getContext(), R.raw.priklucheniyamaksaanddog);
+        mediaPlayer = MediaPlayer.create(getContext(), R.raw.porosyata);
         binding.seekBar.setMax(mediaPlayer.getDuration());
         binding.durationText.setText(getTimeString(mediaPlayer.getDuration()));
 
