@@ -50,6 +50,14 @@ public class LibFragment extends Fragment {
                 NavHostFragment.findNavController(LibFragment.this).navigate(R.id.detailDuneFragment);
             }
         });
+
+        binding.bk22.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                NavHostFragment.findNavController(LibFragment.this).navigate(R.id.detailPorosyataFragment);
+            }
+        });
+
     }
 }
 

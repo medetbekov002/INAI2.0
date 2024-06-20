@@ -28,19 +28,48 @@ public class MainFragment extends Fragment {
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        binding.tvPopulars.setOnClickListener(new View.OnClickListener() {
+        binding.ivPopularBook1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                NavHostFragment.findNavController(MainFragment.this).navigate(R.id.audioStarFragment);
+                NavHostFragment.findNavController(MainFragment.this).navigate(R.id.audioFragment);
             }
         });
 
-        binding.tvPopulars2.setOnClickListener(new View.OnClickListener() {
+        binding.ivPopularBook2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 NavHostFragment.findNavController(MainFragment.this).navigate(R.id.audioStarFragment);
             }
         });
+        binding.ivPopularBook3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                NavHostFragment.findNavController(MainFragment.this).navigate(R.id.audioTheEdgeFragment);
+            }
+        });
+
+        binding.ivPopularBook4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                NavHostFragment.findNavController(MainFragment.this).navigate(R.id.audioDumeFragment);
+            }
+        });
+
+        binding.ivPopularBook5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                NavHostFragment.findNavController(MainFragment.this).navigate(R.id.detailDuneFragment);
+            }
+        });
+
+        binding.ivPopularBook6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                NavHostFragment.findNavController(MainFragment.this).navigate(R.id.detailPorosyataFragment);
+            }
+        });
+
+
 
         binding.ivMenu.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -70,7 +99,7 @@ public class MainFragment extends Fragment {
         list.add(R.drawable.book_w);
         list.add(R.drawable.book_e);
         list.add(R.drawable.image_book_van_gog);
-        binding.recyclerBooks.setAdapter(adapter);
+//        binding.recyclerBooks.setAdapter(adapter);
 
         ArrayList<Integer> list2 = new ArrayList<>();
         adapter2 = new BooksAdapter2(list2);
@@ -79,7 +108,7 @@ public class MainFragment extends Fragment {
         list2.add(R.drawable.book_e);
         list2.add(R.drawable.rectangle);
         list2.add(R.drawable.book_q);
-        binding.recyclerBooks2.setAdapter(adapter2);
+//        binding.recyclerBooks2.setAdapter(adapter2);
     }
 }
 

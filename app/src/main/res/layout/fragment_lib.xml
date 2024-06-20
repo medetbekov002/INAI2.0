@@ -84,18 +84,18 @@
         android:layout_height="wrap_content">
         <ImageView
             android:id="@+id/bk_5"
-            android:src="@drawable/im_bk_3"
+            android:src="@drawable/dedmorozovka"
             android:layout_width="110dp"
             android:layout_height="158dp"/>
         <ImageView
             android:id="@+id/bk_6"
-            android:src="@drawable/kids"
+            android:src="@drawable/kakdadbylmelkim"
             android:layout_marginStart="22dp"
             android:layout_width="110dp"
             android:layout_height="158dp"/>
         <ImageView
             android:id="@+id/bk_7"
-            android:src="@drawable/im_bk_5"
+            android:src="@drawable/sobachkasonya"
             android:layout_marginStart="22dp"
             android:layout_width="110dp"
             android:layout_height="158dp"/>
@@ -111,18 +111,18 @@
         android:layout_height="wrap_content">
         <ImageView
             android:id="@+id/bk_11"
-            android:src="@drawable/im_bk_0"
+            android:src="@drawable/homaandsuslik"
             android:layout_width="110dp"
             android:layout_height="158dp"/>
         <ImageView
             android:id="@+id/bk_22"
-            android:src="@drawable/im_bk_01"
+            android:src="@drawable/porosyata"
             android:layout_marginStart="22dp"
             android:layout_width="110dp"
             android:layout_height="158dp"/>
         <ImageView
             android:id="@+id/bk_33"
-            android:src="@drawable/kids"
+            android:src="@drawable/umnayasobachkasonya"
             android:layout_marginStart="22dp"
             android:layout_width="110dp"
             android:layout_height="158dp"/>
@@ -138,18 +138,18 @@
         android:layout_height="wrap_content">
         <ImageView
             android:id="@+id/bk_1"
-            android:src="@drawable/im_book1"
+            android:src="@drawable/fiksiki"
             android:layout_width="110dp"
             android:layout_height="158dp"/>
         <ImageView
             android:id="@+id/bk_2"
-            android:src="@drawable/im_bk_1"
+            android:src="@drawable/kolobok"
             android:layout_marginStart="22dp"
             android:layout_width="110dp"
             android:layout_height="158dp"/>
         <ImageView
             android:id="@+id/bk_3"
-            android:src="@drawable/kids"
+            android:src="@drawable/krasnayaShapochka"
             android:layout_marginStart="22dp"
             android:layout_width="110dp"
             android:layout_height="158dp"/>

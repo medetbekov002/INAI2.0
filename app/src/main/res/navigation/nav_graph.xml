@@ -155,4 +155,25 @@
         android:name="com.example.myapplication.ui.search.SearchFragment"
         android:label="fragment_search"
         tools:layout="@layout/fragment_search" />
+
+
+    <fragment
+        android:id="@+id/audioPorosyataFragment"
+        android:name="com.example.myapplication.ui.audio.AudioPorosyataFragment"
+        android:label="fragment_audio_porosyata"
+        tools:layout="@layout/fragment_audio_porosyata" >
+        <action
+            android:id="@+id/action_audioPorosyataFragment_to_detailPorosyataFragment"
+            app:destination="@id/detailPorosyataFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailPorosyataFragment"
+        android:name="com.example.myapplication.ui.detail.DetailPorosyataFragment"
+        android:label="fragment_detail_porosyata"
+        tools:layout="@layout/fragment_detail_porosyata" />
+    <fragment
+        android:id="@+id/testForPorosyataFragment"
+        android:name="com.example.myapplication.ui.detail.TestForPorosyataFragment"
+        android:label="fragment_test_for_porosyata"
+        tools:layout="@layout/fragment_test_for_porosyata" />
 </navigation>
