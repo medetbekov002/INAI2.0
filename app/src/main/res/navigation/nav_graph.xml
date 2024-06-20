@@ -216,4 +216,24 @@
         android:name="com.example.myapplication.ui.detail.TestForKolobokFragment"
         android:label="fragment_test_for_kolobok"
         tools:layout="@layout/fragment_test_for_kolobok" />
+
+    <fragment
+        android:id="@+id/audioKorolevaFragment"
+        android:name="com.example.myapplication.ui.audio.AudioKorolevaFragment"
+        android:label="fragment_audio_koroleva"
+        tools:layout="@layout/fragment_audio_koroleva" >
+        <action
+            android:id="@+id/action_audioKorolevaFragment_to_detailKorolevaFragment"
+            app:destination="@id/detailKorolevaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailKorolevaFragment"
+        android:name="com.example.myapplication.ui.detail.DetailKorolevaFragment"
+        android:label="fragment_detail_koroleva"
+        tools:layout="@layout/fragment_detail_koroleva" />
+    <fragment
+        android:id="@+id/testForKorolevaFragment"
+        android:name="com.example.myapplication.ui.detail.TestForKorolevaFragment"
+        android:label="fragment_test_for_koroleva"
+        tools:layout="@layout/fragment_test_for_koroleva" />
 </navigation>
