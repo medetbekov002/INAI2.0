@@ -196,4 +196,24 @@
         android:name="com.example.myapplication.ui.detail.TestForFiksikiFragment"
         android:label="fragment_test_for_fiksiki"
         tools:layout="@layout/fragment_test_for_fiksiki" />
+
+    <fragment
+        android:id="@+id/audioKolobokFragment"
+        android:name="com.example.myapplication.ui.audio.AudioKolobokFragment"
+        android:label="fragment_audio_kolobok"
+        tools:layout="@layout/fragment_audio_kolobok" >
+        <action
+            android:id="@+id/action_audioKolobokFragment_to_detailKolobokFragment"
+            app:destination="@id/detailKolobokFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailKolobokFragment"
+        android:name="com.example.myapplication.ui.detail.DetailKolobokFragment"
+        android:label="fragment_detail_kolobok"
+        tools:layout="@layout/fragment_detail_kolobok" />
+    <fragment
+        android:id="@+id/testForKolobokFragment"
+        android:name="com.example.myapplication.ui.detail.TestForKolobokFragment"
+        android:label="fragment_test_for_kolobok"
+        tools:layout="@layout/fragment_test_for_kolobok" />
 </navigation>

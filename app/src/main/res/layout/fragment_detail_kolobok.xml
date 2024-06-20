@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".ui.detail.DetailKolobokFragment">
+
+    <ImageView
+        android:id="@+id/iv_arr"
+        android:layout_width="22dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/iv_arrow_vector"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--    <ImageView-->
+    <!--        android:layout_width="30dp"-->
+    <!--        android:layout_height="30dp"-->
+    <!--        android:layout_marginTop="32dp"-->
+    <!--        android:layout_marginEnd="34dp"-->
+    <!--        android:src="@drawable/iv_1download"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <View
+        android:id="@+id/view_border"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="70dp"
+        android:background="@color/gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_border">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_large"
+                android:layout_width="224dp"
+                android:layout_height="322dp"
+                android:layout_marginTop="44dp"
+                android:src="@drawable/kolobok"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Колобок"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv_large" />
+
+            <TextView
+                android:id="@+id/tv_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Дети"
+                android:textColor="@color/white_2"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+            <View
+                android:id="@+id/view_border_2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="28dp"
+                android:background="@color/gray"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_subtitle" />
+
+            <TextView
+                android:id="@+id/tv_con1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="20dp"
+                android:text="304"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view_border_2" />
+
+            <TextView
+                android:id="@+id/tv_sub1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="42dp"
+                android:text="Страницы"
+                android:textColor="@color/white_2"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view_border_2" />
+
+            <TextView
+                android:id="@+id/tv_con2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="20dp"
+                android:text="683"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_marginEnd="100dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/tv_con1"
+                app:layout_constraintTop_toBottomOf="@+id/view_border_2" />
+
+            <TextView
+                android:id="@+id/tv_sub2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="42dp"
+                android:text="Прочитали"
+                android:textColor="@color/white_2"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@id/tv_con2"
+                app:layout_constraintTop_toBottomOf="@+id/view_border_2" />
+
+            <Button
+                android:textColor="@color/white"
+                android:id="@+id/tv_con3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/valet"
+                android:text="Слушать"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tv_sub2"
+                app:layout_constraintTop_toBottomOf="@id/view_border_2" />
+
+            <TextView
+                android:id="@+id/tv_descrpt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="90dp"
+                android:text="Описание"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view_border_2" />
+
+            <TextView
+                android:id="@+id/tv_val"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="@string/edc"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_descrpt" />
+
+            <Button
+                android:id="@+id/btn_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="5dp"
+                android:layout_marginStart="114dp"
+                android:backgroundTint="@color/black"
+                android:layout_marginTop="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_val" />
+            <Button
+                android:id="@+id/btn_listen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="5dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/black"
+                app:layout_constraintStart_toEndOf="@id/btn_1"
+                app:layout_constraintTop_toBottomOf="@+id/tv_val" />
+            <androidx.cardview.widget.CardView
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="44dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_1"
+                android:id="@+id/cardd"
+                android:layout_marginTop="46dp"
+                android:layout_marginHorizontal="8dp"
+                android:backgroundTint="@color/black_2"
+                app:cardCornerRadius="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/lin_1"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginStart="20dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:text="Пройти тест по рассказу"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:text="* Инструкция к тесту"
+                        android:layout_marginTop="6dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:textColor="@color/white_2"
+                        android:textSize="14sp"
+                        android:text="Прочитайте внимательно вопрос и выберите один из предложенных вариантов ответов"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginEnd="24dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="108dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_marginTop="14dp"
+                        android:src="@drawable/question_vector"
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"/>
+                    <TextView
+                        android:textColor="@color/white_2"
+                        android:text="Количество вопросов в тесте:"
+                        android:textSize="14sp"
+                        android:layout_marginStart="6dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:textColor="@color/white"
+                        android:text="8"
+                        android:textSize="14sp"
+                        android:layout_marginStart="6dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <Button
+                        android:id="@+id/btn_ntxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Далее"
+                        android:paddingHorizontal="20dp"
+                        android:paddingVertical="5dp"
+                        android:layout_marginStart="14dp"
+                        android:backgroundTint="@color/valet" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

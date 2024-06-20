@@ -37,10 +37,10 @@ public class LibFragment extends Fragment {
             }
         });
 
-        binding.bk6.setOnClickListener(new View.OnClickListener() {
+        binding.bk2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                NavHostFragment.findNavController(LibFragment.this).navigate(R.id.detailForEdgeFragment);
+                NavHostFragment.findNavController(LibFragment.this).navigate(R.id.detailKolobokFragment);
             }
         });
 
