@@ -30,10 +30,10 @@ public class LibFragment extends Fragment {
             }
         });
 
-        binding.bk3.setOnClickListener(new View.OnClickListener() {
+        binding.bk1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                NavHostFragment.findNavController(LibFragment.this).navigate(R.id.detailsFragment);
+                NavHostFragment.findNavController(LibFragment.this).navigate(R.id.detailFiksikiFragment);
             }
         });
 

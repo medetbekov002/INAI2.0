@@ -176,4 +176,24 @@
         android:name="com.example.myapplication.ui.detail.TestForPorosyataFragment"
         android:label="fragment_test_for_porosyata"
         tools:layout="@layout/fragment_test_for_porosyata" />
+
+    <fragment
+        android:id="@+id/audioFiksikiFragment"
+        android:name="com.example.myapplication.ui.audio.AudioFiksikiFragment"
+        android:label="fragment_audio_fiksiki"
+        tools:layout="@layout/fragment_audio_fiksiki" >
+        <action
+            android:id="@+id/action_audioFiksikiFragment_to_detailFiksikiFragment"
+            app:destination="@id/detailFiksikiFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFiksikiFragment"
+        android:name="com.example.myapplication.ui.detail.DetailFiksikiFragment"
+        android:label="fragment_detail_fiksiki"
+        tools:layout="@layout/fragment_detail_fiksiki" />
+    <fragment
+        android:id="@+id/testForFiksikiFragment"
+        android:name="com.example.myapplication.ui.detail.TestForFiksikiFragment"
+        android:label="fragment_test_for_fiksiki"
+        tools:layout="@layout/fragment_test_for_fiksiki" />
 </navigation>

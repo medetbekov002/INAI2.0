@@ -82,7 +82,7 @@
                     android:layout_width="142dp"
                     android:layout_height="202dp"
                     android:layout_marginStart="10dp"
-                    android:src="@drawable/krasnayaShapochka"
+                    android:src="@drawable/shapkared"
                     android:contentDescription="Popular Book 2" />
 
                 <ImageView

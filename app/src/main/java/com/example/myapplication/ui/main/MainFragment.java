@@ -31,7 +31,7 @@ public class MainFragment extends Fragment {
         binding.ivPopularBook1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                NavHostFragment.findNavController(MainFragment.this).navigate(R.id.audioFragment);
+                NavHostFragment.findNavController(MainFragment.this).navigate(R.id.detailFiksikiFragment);
             }
         });
 

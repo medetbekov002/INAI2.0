@@ -149,7 +149,7 @@
             android:layout_height="158dp"/>
         <ImageView
             android:id="@+id/bk_3"
-            android:src="@drawable/krasnayaShapochka"
+            android:src="@drawable/shapkared"
             android:layout_marginStart="22dp"
             android:layout_width="110dp"
             android:layout_height="158dp"/>
