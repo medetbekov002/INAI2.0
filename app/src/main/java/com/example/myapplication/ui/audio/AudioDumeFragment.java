@@ -29,7 +29,7 @@ public class AudioDumeFragment extends Fragment {
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        mediaPlayer = MediaPlayer.create(getContext(), R.raw.sobachkaleya);
+        mediaPlayer = MediaPlayer.create(getContext(), R.raw.sonya);
         binding.seekBar.setMax(mediaPlayer.getDuration());
         binding.durationText.setText(getTimeString(mediaPlayer.getDuration()));
 
