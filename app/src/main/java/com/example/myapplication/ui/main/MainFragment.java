@@ -51,14 +51,14 @@ public class MainFragment extends Fragment {
         binding.ivPopularBook4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                NavHostFragment.findNavController(MainFragment.this).navigate(R.id.audioDumeFragment);
+                NavHostFragment.findNavController(MainFragment.this).navigate(R.id.detailDuneFragment);
             }
         });
 
         binding.ivPopularBook5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                NavHostFragment.findNavController(MainFragment.this).navigate(R.id.detailDuneFragment);
+                NavHostFragment.findNavController(MainFragment.this).navigate(R.id.detailForEdgeFragment);
             }
         });
 

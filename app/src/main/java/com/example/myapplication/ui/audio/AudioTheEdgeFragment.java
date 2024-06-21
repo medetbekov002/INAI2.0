@@ -33,7 +33,7 @@ public class AudioTheEdgeFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        mediaPlayer = MediaPlayer.create(getContext(), R.raw.priklucheniyamaksa);
+        mediaPlayer = MediaPlayer.create(getContext(), R.raw.sobachkaleya);
         binding.seekBar.setMax(mediaPlayer.getDuration());
         binding.durationText.setText(getTimeString(mediaPlayer.getDuration()));
 
